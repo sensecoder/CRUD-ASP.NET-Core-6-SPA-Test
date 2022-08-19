@@ -6,7 +6,6 @@ namespace CRUD_ASP.NET_Core_6_SPA_Test.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-
         public ICollection<EntityObject> HasEntityObjects { get; set; }
 
         public bool Equals(Category x, Category y) => x.Id == y.Id;

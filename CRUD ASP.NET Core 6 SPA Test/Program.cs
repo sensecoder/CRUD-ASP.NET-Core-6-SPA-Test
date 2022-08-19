@@ -3,7 +3,8 @@ using CRUD_ASP.NET_Core_6_SPA_Test.Data;
 using CRUD_ASP.NET_Core_6_SPA_Test.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddControllers();
+builder.Services.AddControllers(); //.AddJsonOptions(
+    //o => o.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
